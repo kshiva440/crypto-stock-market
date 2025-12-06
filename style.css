@@ -62,3 +62,23 @@ footer {
     margin-top: 20px;
     font-size: 14px;
 }
+.crypto-ticker {
+    background-color: #111827;
+    color: #facc15;
+    padding: 10px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+.crypto-ticker span {
+    display: inline-block;
+    padding: 0 50px;
+    animation: ticker 20s linear infinite;
+}
+
+@keyframes ticker {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
