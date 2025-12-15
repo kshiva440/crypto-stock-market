@@ -1,90 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Finance & Crypto Blog</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Home - Live Market Prices</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<img src="logo.png" width="80">
+<header>
+  <img src="logo.png" alt="Logo">
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="crypto.html">Crypto</a>
+    <a href="stocks.html">Stocks</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
 
-    <header>
-        <h1>Finance & Crypto Blog</h1>
-        <nav>
-  <a href="index.html">Home</a> |
-  <a href="about.html">About</a> |
-  <a href="crypto.html">Crypto</a> |
-  <a href="stocks.html">Stocks</a> |
-  <a href="contact.html">Contact</a>
-</nav>
-<hr>
+<div class="container">
+  <h1>Live Market Prices</h1>
+  <div class="muted">Only prices • No charts • Live updates</div>
 
-    </header>
-<!-- Crypto Ticker -->
-<div class="crypto-ticker" id="crypto-ticker">
-    <span id="btc-ticker">Bitcoin: Loading...</span>
-    <span id="eth-ticker">Ethereum: Loading...</span>
-    <span id="doge-ticker">Dogecoin: Loading...</span>
-    <span id="ada-ticker">Cardano: Loading...</span>
+  <div class="grid">
+
+    <!-- Bitcoin -->
+    <div class="card">
+      <h3>Bitcoin (BTC)</h3>
+      <iframe height="160"
+        src="https://s.tradingview.com/embed-widget/symbol-info/?symbol=BINANCE:BTCUSDT">
+      </iframe>
+    </div>
+
+    <!-- Ethereum -->
+    
+<div class="card">
+  <h3>Ethereum (ETH)</h3>
+  <iframe
+    src="https://s.tradingview.com/embed-widget/symbol-info/?symbol=COINBASE:ETHUSD&locale=en"
+
+    height="170"
+    width="100%"
+    frameborder="0"
+    allowtransparency="true">
+  </iframe>
 </div>
-<h1>Welcome to My Finance & Crypto Website</h1>
-
-<p>This website provides latest updates on Cryptocurrency and Indian Stock Market.</p>
-
-<h2>What You Will Find Here</h2>
-<ul>
-  <li>Bitcoin, Ethereum, XRP updates</li>
-  <li>Nifty 50 & Sensex market news</li>
-  <li>Daily finance information</li>
-</ul>
-
-<p><b>Updated Daily | Trusted Information | Easy to Understand</b></p>
 
 
-    <section>
-        <!-- Crypto & Finance Cards -->
-        <div class="card">
-            <h2>Bitcoin</h2>
-            <p>bitcoin faces potential bear cycle.</p>
-        </div>
+    <!-- NIFTY -->
+    <div class="card">
+      <h3>NIFTY 50</h3>
+      <iframe height="160"
+        src="https://s.tradingview.com/embed-widget/symbol-info/?symbol=NSE:NIFTY">
+      </iframe>
+    </div>
 
-        <div class="card">
-            <h2>Ethereum</h2>
-            <p>Ethereum news, updates, and price analysis.</p>
-        </div>
+    <!-- SENSEX -->
+    <div class="card">
+      <h3>SENSEX</h3>
+      <iframe height="160"
+        src="https://s.tradingview.com/embed-widget/symbol-info/?symbol=BSE:SENSEX">
+      </iframe>
+    </div>
 
-        <div class="card">
-            <h2>Stock Market</h2>
-            <p>Nifty, Sensex, and investment tips.</p>
-        </div>
+  </div>
 
-        <div class="card">
-            <h2>Investment Tips</h2>
-            <p>Learn how to invest smartly and grow your wealth.</p>
-        </div>
+  <footer>
+    © 2025 Finance & Crypto Website
+  </footer>
+</div>
 
-        <!-- Live Crypto Prices -->
-        <div class="card" id="crypto-prices">
-            <h2>Live Crypto Prices</h2>
-            <p id="bitcoin-price">Bitcoin: Loading...</p>
-            <p id="ethereum-price">Ethereum: Loading...</p>
-            <p id="dogecoin-price">Dogecoin: Loading...</p>
-            <p id="cardano-price">Cardano: Loading...</p>
-        </div>
-    </section>
-
-    <footer>
-        <p>© 2025 Finance & Crypto Blog. All rights reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
-<h2>Latest Crypto & Stock Market News</h2>
-
-<script src="https://widgets.coingecko.com/gecko-coin-news-widget.js"></script>
-<gecko-coin-news-widget 
-  locale="en" 
-  dark-mode="false">
-</gecko-coin-news-widget>
-

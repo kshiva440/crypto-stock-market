@@ -1,58 +1,54 @@
-<img src="logo.png" width="80">
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Crypto Prices</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="crypto.html">Crypto</a>
-  <a href="stocks.html">Stocks</a>
-  <a href="contact.html">Contact</a>
-</nav>
-<hr>
-<h1>Cryptocurrency Market</h1>
+<header>
+  <img src="logo.png">
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="crypto.html">Crypto</a>
+    <a href="stocks.html">Stocks</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
 
-<p>Cryptocurrency is a digital currency used for online transactions.</p>
+<div class="container">
+  <h1>Live Cryptocurrency Prices</h1>
+  <div class="muted">Bitcoin & Ethereum update 24/7</div>
 
-<h2>Popular Cryptocurrencies</h2>
-<ul>
-  <li>Bitcoin (BTC)</li>
-  <li>Ethereum (ETH)</li>
-  <li>XRP (Ripple)</li>
-  <li>BNB</li>
-  <li>Solana (SOL)</li>
-</ul>
+  <div class="grid">
+    <div class="card">
+      <h3>Bitcoin (BTC)</h3>
+      <iframe height="90"
+        src="https://s.tradingview.com/widgetembed/?symbol=BINANCE:BTCUSDT&interval=1&hidesidetoolbar=1">
+      </iframe>
+    </div>
 
-<h2>Benefits of Crypto</h2>
-<ul>
-  <li>Fast Transactions</li>
-  <li>High Profit Potential</li>
-  <li>Decentralized System</li>
-</ul>
+    <div class="card">
+      <h3>Ethereum (ETH)</h3>
+      <iframe height="90"
+        src="https://s.tradingview.com/widgetembed/?symbol=BINANCE:ETHUSDT&interval=1&hidesidetoolbar=1">
+      </iframe>
+    </div>
 
-<p><b>Note:</b> Crypto market is risky. Invest carefully.</p>
+    <div class="card full">
+      <h3>Bitcoin Daily Chart</h3>
+      <iframe height="420"
+        src="https://s.tradingview.com/widgetembed/?symbol=BINANCE:BTCUSDT&interval=D&hidesidetoolbar=1">
+      </iframe>
+    </div>
+  </div>
 
+  <footer>
+    Crypto prices powered by TradingView
+  </footer>
+</div>
 
-<h1>Cryptocurrency Market</h1>
-<p>Bitcoin, Ethereum, XRP, and other crypto updates will be available here.</p>
-<h2>Live Bitcoin Price</h2>
-
-<script src="https://widgets.coingecko.com/gecko-coin-price-marquee-widget.js"></script>
-<gecko-coin-price-marquee-widget 
-  coins="bitcoin,ethereum,xrp,solana" 
-  currency="usd" 
-  locale="en">
-</gecko-coin-price-marquee-widget>
-<h2>Live Crypto Market (Top Coins)</h2>
-
-<script src="https://widgets.coingecko.com/gecko-coin-list-widget.js"></script>
-<gecko-coin-list-widget 
-  coin-ids="bitcoin,ethereum,binancecoin,ripple,solana"
-  currency="usd" 
-  locale="en">
-</gecko-coin-list-widget>
-<h2>Latest Cryptocurrency News</h2>
-
-<script src="https://widgets.coingecko.com/gecko-coin-news-widget.js"></script>
-<gecko-coin-news-widget 
-  locale="en" 
-  dark-mode="false">
-</gecko-coin-news-widget>
+</body>
+</html>
